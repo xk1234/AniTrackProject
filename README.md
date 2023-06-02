@@ -1,6 +1,8 @@
 # AniTrack
 
-AniTrack is an open-source show tracking service that lets you easily keep track of all the shows you've watched and plan to watch.
+AniTrack is an open-source show tracking service that lets you easily keep track of all the shows you've watched and plan to watch. See at getanitrack.netlify.app
+
+https://github.com/xk1234/AniTrackProject/assets/31469009/c7f17743-6a16-4068-88fe-2d4591f3a09a
 
 ## Features
 
@@ -42,16 +44,8 @@ AniTrack is an open-source show tracking service that lets you easily keep track
     ```
     npm install
     ```
-4. Fill in your Supabase token into `supabaseClient.js`:
-    ```javascript
-    import { createClient } from "@supabase/supabase-js";
 
-    export const supabase = createClient(
-    "DATABASE_URL",
-    "API_KEY"
-    );
-    ```
-5. Start the application:
+4. Start the application:
     ```
     npm run start
     ```
