@@ -4,6 +4,12 @@ AniTrack is an open-source show tracking service that lets you easily keep track
 
 https://github.com/xk1234/AniTrackProject/assets/31469009/c7f17743-6a16-4068-88fe-2d4591f3a09a
 
+
+
+https://github.com/xk1234/AniTrackProject/assets/31469009/c7f17743-6a16-4068-88fe-2d4591f3a09a
+
+
+
 ## Features
 
 - **Watched Shows**: Easily browse through your watched shows. Supports pagination, search, and filtering to make finding your favorite shows a breeze.
