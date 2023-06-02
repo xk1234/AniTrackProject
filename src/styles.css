@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;800&family=Rammetto+One&display=swap");
+
+:root {
+  /* Color styles */
+  --light: rgba(245, 245, 245, 1);
+  --dark: rgba(0, 0, 0, 1);
+  --yellow-300: rgba(255, 242, 112, 1);
+  --yellow-200: rgba(250, 234, 72, 1);
+  --yellow-100: rgba(209, 196, 60, 1);
+  --danger-300: rgba(255, 153, 168, 1);
+  --danger-200: rgba(204, 63, 84, 1);
+  --danger-100: rgba(249, 76, 102, 1);
+  --success-300: rgba(121, 254, 71, 1);
+  --success-200: rgba(42, 135, 8, 1);
+  --success-100: rgba(62, 199, 11, 1);
+  --warning-300: rgba(255, 202, 130, 1);
+  --warning-200: rgba(251, 180, 84, 1);
+  --warning-100: rgba(211, 151, 70, 1);
+  --secondary-300: rgba(255, 121, 248, 1);
+  --secondary-200: rgba(246, 55, 236, 1);
+  --secondary-100: rgba(199, 43, 191, 1);
+  --primary-300: rgba(125, 123, 228, 1);
+  --primary-200: rgba(51, 48, 228, 1);
+  --primary-100: rgba(40, 38, 174, 1);
+
+  /* Text-size styles */
+  /* base size: paragraph---small (16px) */
+  --paragraph-small: 1.3rem;
+  --paragraph-medium: 1.75rem;
+  --paragraph-large: 2.19rem;
+  --paragraph-xs: 0.75rem;
+  --paragraph-xl: 2.62rem;
+  --icon-base: 1.5rem;
+  --icon-large: 1.88rem;
+  --icon-small: 1rem;
+  --icon-xl: 3rem;
+  --icon-xs: 0.75rem;
+  --heading-xs: 1.75rem;
+  --heading-small: 3rem;
+  --heading-medium: 4rem;
+  --heading-large: 4.75rem;
+
+  /* Effect styles */
+  --shadow: 0px 10px 10px rgba(37, 5, 5, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rammetto One", sans-serif;
+}
+
+p,
+span,
+button,
+a,
+label,
+li,
+div {
+  font-family: "Josefin Sans", serif;
+}
+
+button,
+a.button {
+  border: 3px solid var(--local, black);
+  background: white;
+  color: var(--local, black);
+  font-size: var(--paragraph-small);
+  padding: 0.6em;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+button:disabled,
+a.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+  background-color: var(--danger-100);
+}
+
+.active,
+a.button.solid,
+button.solid {
+  background: var(--local, black);
+  color: white;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 75px;
+  padding: 1em 0.5em;
+}
+
+input,
+select {
+  border: 3px solid black;
+  font-family: "Josefin Sans", serif;
+  color: black;
+  font-size: var(--paragraph-small);
+  padding: 0.3em;
+  border-radius: 10px;
+}
+
+.icon-btn {
+  padding: 3px;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  margin: 0 0.2em;
+}
+
+.btn-group {
+  display: flex;
+}
+
+svg,
+path {
+  padding: 0;
+  margin: 0;
+}
+
+span.badge {
+  font-size: 0.5em;
+  padding: 0.3em 0.5em;
+  border: 1px solid black;
+  color: white;
+  border-radius: 10px;
+  background: var(--dark);
+  margin-top: 0.3em;
+}
+
+.tabs {
+  border: 2px solid black;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+
+.tabs button {
+  border: none;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.tabs button.active {
+  background: var(--main, var(--dark));
+}
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+
+.nav-mobile.nav-mobile.nav-mobile.nav-mobile {
+  font-size: 0.8em;
+  border-radius: 0.8em;
+  padding: 0.5em;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .content {
+    padding: 1em 3em 0;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: black;
+  }
+
+  button:hover,
+  a.button:hover {
+    background: var(--local, black);
+    color: white;
+    cursor: pointer;
+  }
+
+  a.button.solid:hover,
+  button.solid:hover {
+    border: 3px solid var(--local, black);
+    background: white;
+    color: var(--local, black);
+    font-size: var(--paragraph-small);
+    padding: 0.6em;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+}

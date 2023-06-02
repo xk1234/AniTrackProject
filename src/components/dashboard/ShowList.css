@@ -1,0 +1,49 @@
+.sl-nav {
+  padding: 0.3em;
+}
+
+.sl-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sl-search {
+  width: 100%;
+}
+
+.sl-shows {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.sl-shows img {
+  object-fit: cover;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .sl-shows > *:hover {
+    box-shadow: var(--shadow);
+    cursor: pointer;
+  }
+}
+@media (min-width: 500px) {
+  .sl-search {
+    width: auto;
+  }
+
+  .sl-next {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sl-shows {
+    flex: 1 1 auto;
+    gap: 15px 15px;
+  }
+}

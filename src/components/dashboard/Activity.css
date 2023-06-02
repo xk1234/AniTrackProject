@@ -1,0 +1,36 @@
+.activity-list {
+  border: 3px solid var(--dark);
+  padding: 1em;
+  border-radius: 20px;
+}
+
+.activity-list h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.activity-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-list li {
+  padding: 0.7em 0.5em;
+}
+
+.activity-list p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.activity-list li:not(.activity-list li:last-of-type) {
+  border-bottom: 1px solid var(--dark);
+}
+
+.activity-list li:hover {
+  color: var(--light);
+  background: var(--dark);
+}

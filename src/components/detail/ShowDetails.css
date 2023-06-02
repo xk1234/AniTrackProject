@@ -1,0 +1,41 @@
+.key-facts {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+.key-facts h1 {
+  font-size: 1.9em;
+}
+
+.genres {
+  font-size: 1.7em;
+  margin: 0.5em 0;
+}
+
+.facts-badge {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.facts-badge .badge {
+  background: var(--warning-300);
+  font-size: 1.2em;
+  color: black;
+  margin: 0.3em 0.5em 0.3em 0;
+}
+
+.desktop-show {
+  display: none;
+}
+
+.facts-badge .badge * {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  .desktop-show {
+    display: block;
+  }
+}
