@@ -31,36 +31,33 @@ AniTrack is an open-source show tracking service that lets you easily keep track
 ## Building
 
 1. Clone this repository: 
-    \```bash
+    ```
     git clone https://github.com/xk1234/AniTrack.git
-    \```
+    ```
 2. Enter the cloned repository:
-    \```bash
+    ```
     cd AniTrack
-    \```
+    ```
 3. Install dependencies:
-    \```bash
+    ```
     npm install
-    \```
+    ```
 4. Fill in your Supabase token into `supabaseClient.js`:
-    \```javascript
+    ```javascript
     import { createClient } from "@supabase/supabase-js";
 
     export const supabase = createClient(
     "DATABASE_URL",
     "API_KEY"
     );
-    \```
+    ```
 5. Start the application:
-    \```bash
+    ```
     npm run start
-    \```
+    ```
 The app will start in development mode, open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Contributing
 
 As an open-source project, we welcome contributions of all sorts. Whether it's submitting a bug report, suggesting new features, improving documentation, or contributing code, we appreciate all the help we can get! Please read `CONTRIBUTING.md` for guidelines on how to contribute.
 
-## License
-
-AniTrack is licensed under the MIT License. See `LICENSE` for more information.
